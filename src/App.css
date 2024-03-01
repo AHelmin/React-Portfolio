@@ -5,7 +5,65 @@
   text-align: center;
 }
 
-.logo {
+h4 {
+  color: black;
+}
+
+.card {
+  height: fit-content;
+  align-items: center;
+}
+
+#img1 {
+  background-image: url('../src/assets/images/Soocial_250x250.png');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 250px
+}
+#img2 {
+  background-image: url('../src/assets/images/Soocial_250x250.png');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 250px
+}
+#img3 {
+  background-image: url('../src/assets/images/Soocial_250x250.png');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 250px
+}
+#img4 {
+  background-image: url('../src/assets/images/Soocial_250x250.png');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 250px
+}
+#img5 {
+  background-image: url('../src/assets/images/Soocial_250x250.png');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 250px
+}
+#img6 {
+  background-image: url('../src/assets/images/Soocial_250x250.png');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 250px
+}
+#img1 {
+  background-image: url('../src/assets/images/Soocial_250x250.png');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -39,4 +97,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */

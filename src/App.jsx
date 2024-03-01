@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route, Outlet, Link } from 'react-router-dom'
 import { Resume, Portfolio, AboutMe, Contact } from './pages'
-// import './App.css'
+import './App.css'
 
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
