@@ -2,11 +2,27 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  /* text-align: center; */
+}
+
+h1 {
+  font-size: 3.5rem;
 }
 
 h4 {
   color: black;
+}
+
+img {
+  height: 3.125rem;
+}
+
+input {
+  width: 680px;
+}
+
+li {
+  font-size: 1.8rem;
 }
 
 .card {
@@ -14,54 +30,75 @@ h4 {
   align-items: center;
 }
 
+#linked-icon {
+  height: 2.5rem;
+}
+
 #img1 {
-  background-image: url('../src/assets/images/Soocial_250x250.png');
+  background-image: url('../src/assets/images/money400x400.jpeg');
   background-size: cover;
   background-position: center;
-  height: 250px;
-  width: 250px
+  height: 400px;
+  width: 400px
 }
 #img2 {
-  background-image: url('../src/assets/images/Soocial_250x250.png');
+  background-image: url('../src/assets/images/money400x400.jpeg');
   background-size: cover;
   background-position: center;
-  height: 250px;
-  width: 250px
+  height: 400px;
+  width: 400px
 }
+
 #img3 {
-  background-image: url('../src/assets/images/Soocial_250x250.png');
+  background-image: url('../src/assets/images/money400x400.jpeg');
   background-size: cover;
   background-position: center;
-  height: 250px;
-  width: 250px
+  height: 400px;
+  width: 400px
 }
 #img4 {
-  background-image: url('../src/assets/images/Soocial_250x250.png');
+  background-image: url('../src/assets/images/money400x400.jpeg');
   background-size: cover;
   background-position: center;
-  height: 250px;
-  width: 250px
+  height: 400px;
+  width: 400px
 }
 #img5 {
-  background-image: url('../src/assets/images/Soocial_250x250.png');
+  background-image: url('../src/assets/images/money400x400.jpeg');
   background-size: cover;
   background-position: center;
-  height: 250px;
-  width: 250px
+  height: 400px;
+  width: 400px
 }
 #img6 {
-  background-image: url('../src/assets/images/Soocial_250x250.png');
+  background-image: url('../src/assets/images/money400x400.jpeg');
   background-size: cover;
   background-position: center;
-  height: 250px;
-  width: 250px
+  height: 400px;
+  width: 400px
 }
-#img1 {
-  background-image: url('../src/assets/images/Soocial_250x250.png');
-  background-size: cover;
-  background-position: center;
-  height: 250px;
+
+@media screen and (max-width: 800px) {
+  input, textarea {
+    width: 100%;
+  }
+
+  #root {
+    padding: 0;
+  }
 }
+
+/* @media screen and (max-width: 900px) {
+  input {
+    width: 500px;
+  }
+  textarea {
+    width: 500px;
+  } 
+  #root {
+    padding: 0;
+  }
+} */
 
 /* .logo {
   height: 6em;

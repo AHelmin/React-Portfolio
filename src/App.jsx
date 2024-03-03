@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { BrowserRouter, Routes, Route, Outlet, Link } from 'react-router-dom'
 import { Resume, Portfolio, AboutMe, Contact } from './pages'
 import './App.css'
+import GitHubIcon from './assets/images/GitHub_Logo_White.png'
+import LinkedInIcon from './assets/images/LinkedIn.png'
 
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
@@ -10,11 +12,35 @@ function App() {
 
   return (
     <>
-      <header>
-        <h1 className='text-center'>
-          &#128540;&#128540;&#128540;&#128540;&#128540;&#128540; This is the Header! 	&#128540;&#128540;&#128540;&#128540;&#128540;&#128540;&#128540;&#128540;&#128540;&#128540;&#128540;&#128540;&#128540;&#128540;&#128540;
-        </h1>
-      </header>
+      <div className='container'>
+        <header className='row'>
+          <div className='col-6'>
+            <h1>
+              Andrew Helmin
+            </h1>
+          </div>
+          <div className='col-6'>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/portfolio">Portfolio</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                  </li>   
+                  <li class="nav-item">
+                    <a class="nav-link" href="/resume">Resume</a>
+                  </li>                         
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </header>
+      </div>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<AboutMe />} />
@@ -24,6 +50,12 @@ function App() {
           <Route path='*' element={<AboutMe />} />
         </Routes>
       </BrowserRouter>
+      <footer>
+        <div className='text-center'>
+          <img src={GitHubIcon} id='git-icon' alt='github icon' />
+          <img src={LinkedInIcon} className="ms-3" id='linked-icon' alt='linkedin icon' />
+        </div>
+      </footer>
     </>
   )
 }
