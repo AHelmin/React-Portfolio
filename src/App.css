@@ -2,7 +2,14 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
   /* text-align: center; */
+}
+
+/* .background {
+} */
+footer {
+  margin-top: 2.5rem;
 }
 
 h1 {
@@ -38,44 +45,44 @@ li {
   background-image: url('../src/assets/images/money400x400.jpeg');
   background-size: cover;
   background-position: center;
-  height: 400px;
-  width: 400px
+  height: 350px;
+  width: 350px
 }
 #img2 {
   background-image: url('../src/assets/images/money400x400.jpeg');
   background-size: cover;
   background-position: center;
-  height: 400px;
-  width: 400px
+  height: 350px;
+  width: 350px
 }
 
 #img3 {
   background-image: url('../src/assets/images/money400x400.jpeg');
   background-size: cover;
   background-position: center;
-  height: 400px;
-  width: 400px
+  height: 350px;
+  width: 350px
 }
 #img4 {
   background-image: url('../src/assets/images/money400x400.jpeg');
   background-size: cover;
   background-position: center;
-  height: 400px;
-  width: 400px
+  height: 350px;
+  width: 350px
 }
 #img5 {
   background-image: url('../src/assets/images/money400x400.jpeg');
   background-size: cover;
   background-position: center;
-  height: 400px;
-  width: 400px
+  height: 350px;
+  width: 350px
 }
 #img6 {
   background-image: url('../src/assets/images/money400x400.jpeg');
   background-size: cover;
   background-position: center;
-  height: 400px;
-  width: 400px
+  height: 350px;
+  width: 350px
 }
 
 @media screen and (max-width: 800px) {

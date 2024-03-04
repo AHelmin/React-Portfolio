@@ -1,19 +1,21 @@
 import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 
+
 export default function Contact() {
 
-    const [messageData, setMessageData] = useState()
+    const defaultData = { name: '', email: '', message: '' }
+
+    const [messageData, setMessageData] = useState(defaultData)
 
     async function handleMessageChange(e) {
         // console.log(messageData)
         e.preventDefault();
-        setMessageData({ ...messageData, [e.target.name]: e.target.value})
+        setMessageData({ ...messageData, [e.target.name]: e.target.value })
     }
 
     async function submitMessage(e) {
-        e.preventDefault()
-        console.log('click')
+        console.log('click');
     }
 
     return (

@@ -28,34 +28,38 @@ function App() {
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/portfolio">Portfolio</a>
-                  </li> 
+                  </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/contact">Contact</a>
-                  </li>   
+                  </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/resume">Resume</a>
-                  </li>                         
+                  </li>
                 </ul>
               </div>
             </nav>
           </div>
         </header>
       </div>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<AboutMe />} />
-          <Route path='/portfolio' element={<Portfolio />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/resume' element={<Resume />} />
-          <Route path='*' element={<AboutMe />} />
-        </Routes>
-      </BrowserRouter>
-      <footer>
-        <div className='text-center'>
-          <img src={GitHubIcon} id='git-icon' alt='github icon' />
-          <img src={LinkedInIcon} className="ms-3" id='linked-icon' alt='linkedin icon' />
-        </div>
-      </footer>
+      <div className='background'>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<AboutMe />} />
+            <Route path='/portfolio' element={<Portfolio />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/resume' element={<Resume />} />
+            <Route path='*' element={<AboutMe />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+
+      <div className='text-center'>
+        <footer>
+          <a href="https://www.github.com/AHelmin"><img src={GitHubIcon} id='git-icon' alt='github icon' /></a>
+          <a href='https://www.linkedin.com/in/andrew-helmin-984074137'><img src={LinkedInIcon} className="ms-3" id='linked-icon' alt='linkedin icon' /></a>
+        </footer>
+      </div>
+
     </>
   )
 }
