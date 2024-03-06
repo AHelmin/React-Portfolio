@@ -9,10 +9,10 @@ export default function Portfolio() {
 
   return (
     <>
-      <body >
+      
         <div className=" container-fluid flex-wrap-column flex-column mt-5 ms-5 col-12 port-container">
           <h2 className="text-left mb-5">Portfolio</h2>
-          <div classNameName="d-flex container-fluid flex-wrap-column flex-md-row flex-column">
+          <div className="d-flex container-fluid flex-wrap-column flex-md-row flex-column">
             <div className="col-12">
               <div className="container-fluid row no-gutters justify-content-around mb-3">
                 <div className="card col-6 mb-3 text-center" id='img1'>
@@ -54,18 +54,17 @@ export default function Portfolio() {
                   </div>
                   <a href='https://www.github.com/AHelmin/SVG-Logo-Maker' target='_blank'><img src={GitHubIcon} alt='Github icon' /></a>
                 </div>
-                {/* <div className="card col-6" id='img6'>
-                  <div className="card-body d-flex align-items-center">
-                    <img src={GitHubIcon} alt='Github icon' />
-                    <img src={GitHubIcon} alt='Github icon' />
+                <div className="card col-6 mb-3 text-center" id='img6'>
+                <h4>Weather Dashboard</h4>
+                  <div className="card-body d-flex align-items-center" onClick={() => {window.location.href='/weather-dashboard'}} style={{ cursor: 'pointer'}}>
                   </div>
-                  <h4>hello</h4>
-                </div> */}
+                  <a href='https://www.github.com/AHelmin/Weather-Dashboard' target='_blank'><img src={GitHubIcon} alt='Github icon' /></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </body>
+      
     </>
   )
 }

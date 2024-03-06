@@ -100,6 +100,17 @@ ul li {
   background-color: black;
 }
 
+.nav-link.active {
+  font-weight: bold;
+  color: white;
+}
+
+#avatar-pic {
+  border-radius: 50%;
+  height: 8rem;
+  width: 8rem;
+}
+
 #linked-icon {
   height: 2.5rem;
 }
@@ -144,6 +155,14 @@ ul li {
   width: 21.875rem
 }
 
+#img6 {
+  background-image: url('../src/assets/images/WeatherDashboard_resized_cropped.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 21.875rem;
+  width: 21.875rem
+}
+
 @media screen and (max-width: 800px) {
   input, textarea {
     width: 100%;
@@ -160,50 +179,3 @@ ul li {
   }
 }
 
-/* @media screen and (max-width: 900px) {
-  input {
-    width: 500px;
-  }
-  textarea {
-    width: 500px;
-  } 
-  #root {
-    padding: 0;
-  }
-} */
-
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
