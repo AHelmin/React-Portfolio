@@ -3,11 +3,13 @@
   margin: 0 auto;
   padding: 2rem;
   font-family: Arial, Helvetica, sans-serif;
-  /* text-align: center; */
 }
 
-/* .background {
-} */
+.background {
+  padding-top: 50px; 
+  padding-bottom: 70px;
+}
+
 footer {
   margin-top: 2.5rem;
 }
@@ -25,11 +27,16 @@ img {
 }
 
 input {
-  width: 680px;
+  width: 30rem;
 }
 
-li {
+nav ul li {
   font-size: 1.8rem;
+
+}
+
+ul li {
+  font-size: 1.2rem;
 }
 
 .card {
@@ -37,52 +44,104 @@ li {
   align-items: center;
 }
 
+.card h4 {
+  color: black;
+  background-color: white;
+  width: 21.875rem;
+}
+
+.card a img {
+  transition: filter 0.5s ease;
+}
+
+.card a img:hover {
+  filter: brightness(200%)
+}
+
+.card-body {
+  height: 1.875rem;
+  width: 21.875rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: black;
+}
+
+.header-row {
+  background-color: black;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: black;
+}
+
+.link img{
+  transition: filter 0.5s ease;
+}
+
+.link img:hover {
+  filter: brightness(150%)
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+}
+
 #linked-icon {
   height: 2.5rem;
 }
 
 #img1 {
-  background-image: url('../src/assets/images/money400x400.jpeg');
+  background-image: url('../src/assets/images/appetizercombo.jpg');
   background-size: cover;
   background-position: center;
-  height: 350px;
-  width: 350px
+  height: 21.875rem;
+  width: 21.875rem
 }
+
 #img2 {
-  background-image: url('../src/assets/images/money400x400.jpeg');
+  background-image: url('../src/assets/images/calendar_picture_resized_cropped.jpeg');
   background-size: cover;
   background-position: center;
-  height: 350px;
-  width: 350px
+  height: 21.875rem;
+  width: 21.875rem
 }
 
 #img3 {
-  background-image: url('../src/assets/images/money400x400.jpeg');
+  background-image: url('../src/assets/images/SocialMediaPic_resized_cropped.jpg');
   background-size: cover;
   background-position: center;
-  height: 350px;
-  width: 350px
+  height: 21.875rem;
+  width: 21.875rem
 }
+
 #img4 {
-  background-image: url('../src/assets/images/money400x400.jpeg');
+  background-image: url('../src/assets/images/EmployeePic_resized_cropped.jpg');
   background-size: cover;
   background-position: center;
-  height: 350px;
-  width: 350px
+  height: 21.875rem;
+  width: 21.875rem
 }
+
 #img5 {
-  background-image: url('../src/assets/images/money400x400.jpeg');
+  background-image: url('../src/assets/images/LogoMaker_resized.png');
   background-size: cover;
   background-position: center;
-  height: 350px;
-  width: 350px
-}
-#img6 {
-  background-image: url('../src/assets/images/money400x400.jpeg');
-  background-size: cover;
-  background-position: center;
-  height: 350px;
-  width: 350px
+  height: 21.875rem;
+  width: 21.875rem
 }
 
 @media screen and (max-width: 800px) {
@@ -92,6 +151,12 @@ li {
 
   #root {
     padding: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    justify-content: center;
   }
 }
 
