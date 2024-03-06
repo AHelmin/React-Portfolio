@@ -17,8 +17,10 @@ export default function Portfolio() {
               <div className="container-fluid row no-gutters justify-content-around mb-3">
                 <div className="card col-6 mb-3 text-center" id='img1'>
                   <h4>Restaurant Manager</h4>
-                  <div className="card-body d-flex" onClick={() => {window.location.href='/restaurant-manager'}} style={{ cursor: 'pointer'}}>
+                  <Link className='link-link' to='/restaurant-manager'>
+                  <div className="card-body d-flex" style={{ cursor: 'pointer'}}>
                   </div>
+                  </Link>
                   <div className="d-flex link">
                     <a href='https://group-1-restaurant-manager-dc017dce6dee.herokuapp.com/' target='_blank'><img src={HerokuIcon} alt='Heroku icon, link to deployed application' /></a>
                     <a href='https://github.com/Ms-Meredith-McD/Restaurant-Management' target='_blank'><img src={GitHubIcon} alt='Github icon, link to GitHub repo' /></a>
@@ -26,8 +28,10 @@ export default function Portfolio() {
                 </div>
                 <div className="card col-6 text-center" id='img2'>
                   <h4>Holiday Marketing Tool</h4>
-                  <div className="card-body d-flex" onClick={() => {window.location.href='/holiday-marketing-tool'}} style={{ cursor: 'pointer'}}>
+                  <Link className='link-link' to='/holiday-marketing-tool'>
+                  <div className="card-body d-flex" style={{ cursor: 'pointer'}}>
                   </div>
+                  </Link>
                   <div className="d-flex link">
                     <a href='https://www.github.com/thejackbitt/holiday-marketing-tool' target='_blank'><img src={GitHubIcon} alt='Github icon' /></a>
                   </div>
@@ -36,28 +40,36 @@ export default function Portfolio() {
               <div className="container-fluid row no-gutters justify-content-around mb-3">
                 <div className="card col-6 mb-3 text-center" id='img3'>
                   <h4>Social Network API</h4>
-                  <div className="card-body d-flex align-items-center" onClick={() => {window.location.href='/social-network-api'}} style={{ cursor: 'pointer'}}>
+                  <Link className='link-link' to='/social-network-api'>
+                  <div className="card-body d-flex align-items-center" style={{ cursor: 'pointer'}}>
                   </div>
+                  </Link>
                   <a href='https://www.github.com/AHelmin/Social-Network-API' target='_blank'><img src={GitHubIcon} alt='Github icon' /></a>
                 </div>
                 <div className="card col-6 text-center" id='img4'>
                   <h4>Employee Tracker</h4>
-                  <div className="card-body d-flex align-items-center" onClick={() => {window.location.href='/employee-tracker'}} style={{ cursor: 'pointer'}}>
+                  <Link className='link-link' to='/employee-tracker'>
+                  <div className="card-body d-flex align-items-center" style={{ cursor: 'pointer'}}>
                   </div>
+                  </Link>
                   <a href='https://www.github.com/AHelmin/Employee-Tracker' target='_blank'><img src={GitHubIcon} alt='Github icon' /></a>
                 </div>
               </div>
               <div className="container-fluid row no-gutters justify-content-around">
                 <div className="card col-6 mb-3 text-center" id='img5'>
                   <h4>SVG Logo Maker</h4>
-                  <div className="card-body d-flex align-items-center" onClick={() => {window.location.href='/svg-logo-maker'}} style={{ cursor: 'pointer'}}>
+                  <Link className='link-link' to='/svg-logo-maker'>
+                  <div className="card-body d-flex align-items-center" style={{ cursor: 'pointer'}}>
                   </div>
+                  </Link>
                   <a href='https://www.github.com/AHelmin/SVG-Logo-Maker' target='_blank'><img src={GitHubIcon} alt='Github icon' /></a>
                 </div>
                 <div className="card col-6 mb-3 text-center" id='img6'>
                 <h4>Weather Dashboard</h4>
-                  <div className="card-body d-flex align-items-center" onClick={() => {window.location.href='/weather-dashboard'}} style={{ cursor: 'pointer'}}>
+                <Link className='link-link' to='/weather-dashboard'>
+                  <div className="card-body d-flex align-items-center" style={{ cursor: 'pointer'}}>
                   </div>
+                  </Link>
                   <a href='https://www.github.com/AHelmin/Weather-Dashboard' target='_blank'><img src={GitHubIcon} alt='Github icon' /></a>
                 </div>
               </div>
