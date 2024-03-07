@@ -1,5 +1,5 @@
-import { useParams } from "react-router-dom"
-import { useEffect, useState } from "react"
+
+import ResumeView from "../components/ResumeView";
 
 export default function Resume() {
 
@@ -145,7 +145,7 @@ export default function Resume() {
         </ul>
         </div>
         <div className="text-center">
-          <button className=' btn btn-primary' onClick={downloadResume}>Download Resume</button>
+          <ResumeView />
         </div>
       </div>
     </>
