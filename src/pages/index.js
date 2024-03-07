@@ -1,3 +1,4 @@
+//route all the React functions in one file
 
 export { default as AboutMe} from './About-me'
 export { default as Portfolio } from './Portfolio'

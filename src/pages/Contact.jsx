@@ -1,5 +1,5 @@
-
-import { useEffect, useState } from "react"
+//add content to contact page
+import { useState } from "react"
 
 
 export default function Contact() {

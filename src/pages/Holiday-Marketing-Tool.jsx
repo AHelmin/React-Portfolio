@@ -1,5 +1,4 @@
-import { useParams } from "react-router-dom"
-import { useEffect, useState } from "react"
+//add content to holiday marketing tool
 
 export default function HolidayMarketingTool() {
 

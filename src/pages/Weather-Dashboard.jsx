@@ -1,5 +1,4 @@
-import { useParams } from "react-router-dom"
-import { useEffect, useState } from "react"
+//build the weather dashboard page
 
 export default function WeatherDashboard() {
 

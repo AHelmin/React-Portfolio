@@ -1,3 +1,5 @@
+//build the app page with persistant header and footer, with react router dom directing the page changes
+
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import {
@@ -23,6 +25,7 @@ import "../node_modules/bootstrap/dist/js/bootstrap.min.js"
 
 function App() {
 
+  //state tuple and function to handle adding the 'active' class to the selected navbar item
   const [activeLink, setActiveLink] = useState(window.location.pathname)
 
   function handleClick(path) {

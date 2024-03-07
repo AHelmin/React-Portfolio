@@ -1,5 +1,4 @@
-import { useParams } from "react-router-dom"
-import { useEffect, useState } from "react"
+//build the svg logomaker page
 
 export default function LogoMaker() {
 

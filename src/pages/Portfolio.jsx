@@ -1,8 +1,9 @@
+//build the portfolio page
+
 import { Link } from "react-router-dom"
 
 import GitHubIcon from '../assets/images/github-mark.png'
 import HerokuIcon from '../assets/images/heroku-logo-stroke-white.png'
-import Appetizer from '../assets/images/appetizercombo.jpg'
 
 
 export default function Portfolio() {

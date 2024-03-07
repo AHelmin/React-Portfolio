@@ -1,5 +1,4 @@
-import { useParams } from "react-router-dom"
-import { useEffect, useState } from "react"
+//add content to employee tracker page
 
 export default function EmployeeTracker() {
 

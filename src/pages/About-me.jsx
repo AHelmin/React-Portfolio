@@ -1,3 +1,4 @@
+//add content to about me page
 import Avatar from '../assets/images/Avatar_100x100.jpg'
 
 export default function AboutMe() {

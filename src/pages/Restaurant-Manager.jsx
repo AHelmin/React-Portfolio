@@ -1,4 +1,4 @@
-
+//build the restaurant manager page
 
 export default function RestaurantManager() {
 
