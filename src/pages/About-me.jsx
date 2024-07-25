@@ -1,5 +1,6 @@
 //add content to about me page
-import Avatar from '../assets/images/Avatar_100x100.jpg'
+import Avatar from '../assets/images/avatarPic2.png'
+
 
 export default function AboutMe() {
 
