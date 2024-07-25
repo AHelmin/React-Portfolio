@@ -6,7 +6,7 @@ export default function AboutMe() {
 
   return (
     <>
-      <div className=" container-fluid flex-wrap-column flex-column mt-5 ms-5 col-12">
+      <div className=" container-fluid flex-wrap-column flex-column mt-5 col-12">
         <h2 className="text-left">About Me</h2>
         <img src={Avatar} id='avatar-pic' className="mt-3 mb-3"alt='avatar pic' />
         <p>I am a single father of a wonderful 6 year old daughter. Our time together is
@@ -33,9 +33,9 @@ export default function AboutMe() {
         <p>
           The coursework in which I have experience is GitHub, HTML, CSS, JavaScript, JQuery,
           Bootstrap, Tailwind, Node.js, Express, React, RESTful API, MySQL, MongoBD. As 
-          well as concepts such as routing, object-relational mapping, and model-view-controller.
+          well as concepts such as routing, object-relational mapping, model-view-controller, and Agile methodologies.
           With the introduction and implementation of these topics, I feel 
-          that I am prepared to begin my career in development.
+          that I am prepared to begin my career in development and work my way to mastery.
         </p>
       </div>
     </>
