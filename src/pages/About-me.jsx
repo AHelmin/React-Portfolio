@@ -25,8 +25,7 @@ export default function AboutMe() {
         </p>
 
         <p>
-          Currently, I'm fully immersed in a challenging bootcamp program.
-          I am near the end of the program and feel that I have done well.
+          I have completed a full stack developer bootcamp offered through the University of Minnesota.
           Looking forward, it is clear that this is a journey in which there
           seems to be no end. There will always be something new to learn and 
           that is what makes this career field so exciting.
