@@ -13,7 +13,7 @@ import {
   EmployeeTracker,
   LogoMaker,
   WeatherDashboard
-} from './pages'
+} from './pages/index.js'
 
 import './App.css'
 import GitHubIcon from './assets/images/GitHub_Logo_White.png'
@@ -21,7 +21,7 @@ import LinkedInIcon from './assets/images/LinkedIn.png'
 import FacebookIcon from './assets/images/Facebook_Logo_Primary.png'
 
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
-import "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+import "bootstrap/dist/js/bootstrap.min.js"
 
 function App() {
 
