@@ -1,7 +1,6 @@
 //add content to contact page
 import { useState } from "react"
 
-
 export default function Contact() {
 
     const defaultData = { name: '', email: '', message: '' }
@@ -10,6 +9,7 @@ export default function Contact() {
     const [isValidEmail, setIsValidEmail] = useState(false)
     const [isValidName, setIsValidName] = useState(true)
     const [isValidMessage, setIsValidMessage] = useState(true)
+    const API_URL = 'https://jfpgw7f0ag.execute-api.us-east-2.amazonaws.com/dev'
 
     //function to validate email
     function validateEmail(email) {
