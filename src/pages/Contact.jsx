@@ -9,7 +9,7 @@ export default function Contact() {
     const [isValidEmail, setIsValidEmail] = useState(false)
     const [isValidName, setIsValidName] = useState(true)
     const [isValidMessage, setIsValidMessage] = useState(true)
-    const API_URL = 'https://jfpgw7f0ag.execute-api.us-east-2.amazonaws.com/dev'
+    const API_URL = 'https://jfpgw7f0ag.execute-api.us-east-2.amazonaws.com/dev';
 
     //function to validate email
     function validateEmail(email) {
@@ -46,8 +46,16 @@ export default function Contact() {
         setMessageData({ ...messageData, [e.target.name]: e.target.value })
     }
 
-    async function submitMessage(e) {
-        console.log('click');
+    async function submitMessage(messageData) {
+        // console.log('click');
+        const response = await fetch(`${API_URL}/contact`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData),
+        });
+
+        const data = await response.json();
+        console.log(data);
     }
 
     return (
