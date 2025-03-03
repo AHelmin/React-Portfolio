@@ -22,6 +22,8 @@ export default function Resume() {
           <li>React</li>
           <li>MySQL</li>
           <li>MongoDB</li>
+          <li>Amazon Web Services</li>
+          <li>Microsoft Azure</li>
         </ul>
         </div>
         <div className="text-center">

@@ -9,33 +9,38 @@ export default function AboutMe() {
     <>
       <div className=" container-fluid flex-wrap-column flex-column mt-5 col-12">
         <h2 className="text-left">About Me</h2>
-        <img src={Avatar} id='avatar-pic' className="mt-3 mb-3"alt='avatar pic' />
-        <p>I am a single father of a wonderful 6 year old daughter. Our time together is
-          precious, whether it's at a city park or visiting 
-          with family. Between events with her, I also enjoy 
-          learning new things.
-        </p>
+        <img src={Avatar} id='avatar-pic' className="mt-3 mb-3" alt='avatar pic' />
         <p>
-          I earned  my bachelor's degree from the University of Minnesota, 
-          Morris in 2018. I spent the next 5 years worker as a chemical technician.
-         After spending five years in the field, I felt the need for a change 
-         and decided to pursue a career in coding. I have always been drawn to
-         computers and almost chose a major of computer science. I am thankful 
-         to have the opportunity to delve into the world of coding.
+          I am a <strong>dedicated single father</strong> to a wonderful 6-year-old daughter. Our time together is precious—whether we're exploring city parks or visiting family.
+          Between these moments, I have a deep passion for <strong>learning and self-improvement</strong>, always looking for new challenges to take on.
         </p>
 
         <p>
-          I have completed a full stack developer bootcamp offered through the University of Minnesota.
-          Looking forward, it is clear that this is a journey in which there
-          seems to be no end. There will always be something new to learn and 
-          that is what makes this career field so exciting.
+          I earned my <strong>bachelor’s degree from the University of Minnesota, Morris in 2018</strong> and spent the next five years working as a <strong>chemical technician</strong>.
+          While I gained valuable experience in that field, I felt drawn to the world of <strong>software development</strong>—a passion I’ve had since my early exposure to computers.
+          This realization led me to make a <strong>career transition into coding</strong>, a decision I’m truly excited about.
         </p>
+
         <p>
-          The coursework in which I have experience is GitHub, HTML, CSS, JavaScript, JQuery,
-          Bootstrap, Tailwind, Node.js, Express, React, RESTful API, MySQL, MongoBD. As 
-          well as concepts such as routing, object-relational mapping, model-view-controller, and Agile methodologies.
-          With the introduction and implementation of these topics, I feel 
-          that I am prepared to begin my career in development and work my way to mastery.
+          To solidify my skills, I completed a <strong>Full Stack Developer Bootcamp</strong> through the University of Minnesota.
+          This experience gave me hands-on training in <strong>modern web development technologies</strong>, including:
+        </p>
+
+        <ul>
+          <li><strong>Front-End:</strong> HTML, CSS, JavaScript, jQuery, Bootstrap, Tailwind, React</li>
+          <li><strong>Back-End:</strong> Node.js, Express, RESTful APIs, MySQL, MongoDB</li>
+          <li><strong>Concepts:</strong> Routing, Object-Relational Mapping (ORM), Model-View-Controller (MVC), Agile methodologies</li>
+          <li><strong>Version Control & Deployment:</strong> GitHub, AWS, and Azure</li>
+        </ul>
+
+        <p>
+          Additionally, I have earned <strong>certifications in both AWS and Azure</strong>, further strengthening my ability to
+          <strong>build and deploy scalable, cloud-based applications</strong>.
+        </p>
+
+        <p>
+          I see <strong>software development as a continuous journey of growth and learning</strong>—one that excites me because there's always something new to master.
+          I'm eager to apply my knowledge, collaborate with other professionals, and contribute meaningfully to the field of web development.
         </p>
       </div>
     </>

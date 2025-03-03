@@ -1,15 +1,18 @@
-//add content to contact page
-import { useState } from "react"
+import React, { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Contact() {
 
-    const defaultData = { name: '', email: '', message: '' }
+    const defaultData = { name: '', email: '', message: '' };
 
-    const [messageData, setMessageData] = useState(defaultData)
-    const [isValidEmail, setIsValidEmail] = useState(false)
-    const [isValidName, setIsValidName] = useState(true)
-    const [isValidMessage, setIsValidMessage] = useState(true)
-    const API_URL = 'https://jfpgw7f0ag.execute-api.us-east-2.amazonaws.com/dev';
+    const [messageData, setMessageData] = useState(defaultData);
+    const [isValidEmail, setIsValidEmail] = useState(false);
+    const [isValidName, setIsValidName] = useState(true);
+    const [isValidMessage, setIsValidMessage] = useState(true);
+    const [captchaToken, setCaptchaToken] = useState(null);
+
+    const API_URL = 'https://jfpgw7f0ag.execute-api.us-east-2.amazonaws.com/dev/contact/';
+
 
     //function to validate email
     function validateEmail(email) {
@@ -44,11 +47,29 @@ export default function Contact() {
         // console.log(messageData)
         e.preventDefault();
         setMessageData({ ...messageData, [e.target.name]: e.target.value })
-    }
+    };
 
-    async function submitMessage(messageData) {
+    //Handle captcha change
+    function handleCaptchaChange(token) {
+        setCaptchaToken(token)
+    };
+
+    async function submitMessage(e) {
         // console.log('click');
-        const response = await fetch(`${API_URL}/contact`, {
+        e.preventDefault();
+
+        if (!captchaToken) {
+            alert('Please verify the reCAPTCHA before submitting.');
+            return;
+        }
+
+        //Create POST data
+        const formData = {
+            ...messageData,
+            captchaToken,
+        };
+
+        const response = await fetch(`${API_URL}`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData),
@@ -56,6 +77,7 @@ export default function Contact() {
 
         const data = await response.json();
         console.log(data);
+        setMessageData(defaultData)
     }
 
     return (
@@ -72,7 +94,7 @@ export default function Contact() {
                         <div className="mb-3">
                             {/* <label className="form-label" htmlFor="email">Name</label> */}
                             <h3>Email:</h3>
-                            <input type="text" name="email" value={messageData.email} onChange={handleMessageChange} onBlur={handleBlurEmail} />
+                            <input type="text" name="email" value={messageData.email || ''} onChange={handleMessageChange} onBlur={handleBlurEmail} />
                         </div>
                         <div className="mb-3">
                             {/* <label className="form-label" htmlFor="name">Name</label> */}
@@ -82,6 +104,12 @@ export default function Contact() {
                         {!isValidEmail && <div>{messageData.email ? 'You must enter a valid email.' : 'You must enter an email'}</div>}
                         {!isValidName && <div>You must enter a name.</div>}
                         {!isValidMessage && <div>You must enter a message.</div>}
+
+                        <ReCAPTCHA
+                            sitekey = "6LdsvuQqAAAAAOu2LBWvieVkVo2OjJMeKJ1lgLFH"
+                            onChange={handleCaptchaChange}
+                        />
+
                         <button className="btn btn-primary" onClick={submitMessage}>Submit</button>
                     </form>
                 </div>

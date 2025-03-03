@@ -11,7 +11,7 @@ import {
   HolidayMarketingTool,
   SocialNetworkAPI,
   EmployeeTracker,
-  LogoMaker,
+  PersonalPortfolio,
   WeatherDashboard
 } from './pages/index.js'
 
@@ -39,7 +39,7 @@ function App() {
         
           <header className='row align-items-center justify-content-center header-row'>
             <div className='col-lg-6 d-flex justify-content-lg-center justify-content-center halfheader'>
-              <h1>Andrew Helmin</h1>
+              <h1>AJH Portfolio</h1>
             </div>
             <div className='col-lg-6 d-flex justify-content-lg-end justify-content-center halfheader'>
               <nav className="navbar navbar-expand-lg navbar-light bg-black w-100">
@@ -82,7 +82,7 @@ function App() {
           <Route path='/holiday-marketing-tool' element={<HolidayMarketingTool />} />
           <Route path='/social-network-api' element={<SocialNetworkAPI />} />
           <Route path='/employee-tracker' element={<EmployeeTracker />} />
-          <Route path='/svg-logo-maker' element={<LogoMaker />} />
+          <Route path='/personal-portfolio' element={<PersonalPortfolio />} />
           <Route path='/weather-dashboard' element={<WeatherDashboard />} />
           <Route path='*' element={<AboutMe />} />
         </Routes>
