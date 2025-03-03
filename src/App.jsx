@@ -10,9 +10,9 @@ import {
   RestaurantManager,
   HolidayMarketingTool,
   SocialNetworkAPI,
-  EmployeeTracker,
   PersonalPortfolio,
-  WeatherDashboard
+  WeatherDashboard,
+  ToDoApp
 } from './pages/index.js'
 
 import './App.css'
@@ -81,7 +81,7 @@ function App() {
           <Route path='/restaurant-manager' element={<RestaurantManager />} />
           <Route path='/holiday-marketing-tool' element={<HolidayMarketingTool />} />
           <Route path='/social-network-api' element={<SocialNetworkAPI />} />
-          <Route path='/employee-tracker' element={<EmployeeTracker />} />
+          <Route path='/to-do-app' element={<ToDoApp />} />
           <Route path='/personal-portfolio' element={<PersonalPortfolio />} />
           <Route path='/weather-dashboard' element={<WeatherDashboard />} />
           <Route path='*' element={<AboutMe />} />
