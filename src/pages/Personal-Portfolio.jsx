@@ -9,8 +9,9 @@ export default function PersonalPortfoio() {
         <h2 className="text-left mb-3">Personal Portfolio Tech Stack</h2>
         <h4 className="text-left mb-3">General</h4>
         <ul>
+          <li>This Webpage</li>
           <li>React Client Side</li>
-          <li>AWS Server Side</li>
+          <li>First App using AWS Server Side</li>
         </ul>
         <h4 className="text-left mb-3">Client-Side Tech Stack</h4>
         <ul>
