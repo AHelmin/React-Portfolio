@@ -82,7 +82,7 @@ export default function Contact() {
 
     return (
         <>
-            <div className="d-flex container-fluid flex-wrap-column flex-column mt-5 ms-5">
+            <div className="d-flex container-fluid flex-column mt-5">
                 <h2 className="text-left mb-5">Contact</h2>
                 <div className="col-9">
                     <form className="form">

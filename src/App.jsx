@@ -91,9 +91,9 @@ function App() {
 
       <div className='text-center footer'>
         <footer>
-          <a href="https://www.github.com/AHelmin"><img src={GitHubIcon} id='git-icon' alt='github icon' /></a>
-          <a href='https://www.linkedin.com/in/andrew-helmin-984074137'><img src={LinkedInIcon} className="ms-3" id='linked-icon' alt='linkedin icon' /></a>
-          <a href='https://www.facebook.com/andrew.helmin/'><img src={FacebookIcon} className="ms-3" id='linked-icon' alt='facebook icon' /></a>
+          <a href="https://www.github.com/AHelmin"><img src={GitHubIcon} className='icon' id='git-icon' alt='github icon' /></a>
+          <a href='https://www.linkedin.com/in/andrew-helmin-984074137'><img src={LinkedInIcon} className="ms-3 icon" id='linked-icon' alt='linkedin icon' /></a>
+          <a href='https://www.facebook.com/andrew.helmin/'><img src={FacebookIcon} className="ms-3 icon" id='facebook-icon' alt='facebook icon' /></a>
         </footer>
       </div>
       </BrowserRouter>

@@ -1,10 +1,18 @@
+* {
+  outline: 1px solid red;
+}
+
 #root {
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
 
 .background {
   padding-top: 50px; 
@@ -29,7 +37,8 @@ img {
 }
 
 input {
-  width: 30rem;
+  width: 100%;
+  max-width: 30rem;
 }
 
 nav ul li {
@@ -100,10 +109,9 @@ ul li {
 }
 
 .navbar {
-  display: flex;
-  justify-content: center;
   width: 100%;
-  background-color: black;
+  max-width: 1280px; /* Restrict navbar width */
+  margin: 0 auto;
 }
 
 .nav-link.active {
@@ -134,7 +142,7 @@ ul li {
   background-size: cover;
   background-position: center;
   height: 21.875rem;
-  width: 21.875rem
+  width: 21.875rem;
 }
 
 #img3 {
@@ -185,3 +193,14 @@ ul li {
   }
 }
 
+@media (max-width: 992px) {
+  .header, .footer {
+    height: 3.5rem
+  }
+}
+
+@media(max-width: 800px) {
+  .icon {
+    transform: scale(0.75);
+  }
+}
