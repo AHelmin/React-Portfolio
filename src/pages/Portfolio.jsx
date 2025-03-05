@@ -12,12 +12,11 @@ export default function Portfolio() {
   return (
     <>
 
-      <div className=" container-fluid flex-wrap-column flex-column mt-5 col-12 port-container">
+      <div className=" container flex-wrap-column flex-column mt-5 col-12 port-container">
         <h2 className="text-left mb-5">Portfolio</h2>
-        <div className="d-flex  flex-wrap-column flex-md-row flex-column">
-          <div className="row">
+        <div className="d-flex flex-wrap-column flex-md-row flex-column">
             <div className="col-12">
-              <div className="row no-gutters justify-content-around mb-3">
+              <div className="row g-3 justify-content-around mb-3">
                 <div className="card col-6 mb-3 text-center" id='img5'>
                   <h4>Personal Portfolio</h4>
                   <Link className='link-link' to='/personal-portfolio'>
@@ -40,7 +39,7 @@ export default function Portfolio() {
                   </div>
                 </div>
               </div>
-              <div className="container-fluid row no-gutters justify-content-around mb-3">
+              <div className="row g-3 justify-content-around mb-3">
                 <div className="card col-6 mb-3 text-center" id='img1'>
                   <h4>Restaurant Manager</h4>
                   <Link className='link-link' to='/restaurant-manager'>
@@ -63,7 +62,7 @@ export default function Portfolio() {
                   </div>
                 </div>
               </div>
-              <div className="container-fluid row no-gutters justify-content-around">
+              <div className="row g-3 justify-content-around">
                 <div className="card col-6 mb-3 text-center" id='img3'>
                   <h4>Social Network API</h4>
                   <Link className='link-link' to='/social-network-api'>
@@ -82,7 +81,6 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
 

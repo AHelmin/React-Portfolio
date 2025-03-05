@@ -84,7 +84,7 @@ export default function Contact() {
         <>
             <div className="d-flex container-fluid flex-column mt-5">
                 <h2 className="text-left mb-5">Contact</h2>
-                <div className="col-9">
+                <div className="col-12">
                     <form className="form">
                         <div className="mb-3">
                             {/* <label className="form-label" htmlFor="name"></label> */}
@@ -110,7 +110,7 @@ export default function Contact() {
                             onChange={handleCaptchaChange}
                         />
 
-                        <button className="btn btn-primary" onClick={submitMessage}>Submit</button>
+                        <button className="btn btn-primary mt-3" onClick={submitMessage}>Submit</button>
                     </form>
                 </div>
             </div>

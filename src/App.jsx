@@ -34,15 +34,15 @@ function App() {
 
   return (
     <>
-<BrowserRouter>
-      <div className='container-fluid header'>
-        
+      <BrowserRouter>
+        <div className='container-fluid header'>
+
           <header className='row align-items-center justify-content-center header-row'>
             <div className='col-lg-6 d-flex justify-content-lg-center justify-content-center halfheader'>
               <h1>AJH Portfolio</h1>
             </div>
             <div className='col-lg-6 d-flex justify-content-lg-end justify-content-center halfheader'>
-              <nav className="navbar navbar-expand-lg navbar-light bg-black w-100">
+              <nav className="navbar navbar-expand-lg navbar-light bg-black w-100 px-5">
                 <button className="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon"></span>
                 </button>
@@ -69,33 +69,35 @@ function App() {
               </nav>
             </div>
           </header>
-      </div>
+        </div>
 
-      <div className='background'>
+        <div className='background'>
 
-        <Routes>
-          <Route path='/' element={<AboutMe />} />
-          <Route path='/portfolio' element={<Portfolio />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/resume' element={<Resume />} />
-          <Route path='/restaurant-manager' element={<RestaurantManager />} />
-          <Route path='/holiday-marketing-tool' element={<HolidayMarketingTool />} />
-          <Route path='/social-network-api' element={<SocialNetworkAPI />} />
-          <Route path='/to-do-app' element={<ToDoApp />} />
-          <Route path='/personal-portfolio' element={<PersonalPortfolio />} />
-          <Route path='/weather-dashboard' element={<WeatherDashboard />} />
-          <Route path='*' element={<AboutMe />} />
-        </Routes>
-      
-    </div >
+          <Routes>
+            <Route path='/' element={<AboutMe />} />
+            <Route path='/portfolio' element={<Portfolio />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/resume' element={<Resume />} />
+            <Route path='/restaurant-manager' element={<RestaurantManager />} />
+            <Route path='/holiday-marketing-tool' element={<HolidayMarketingTool />} />
+            <Route path='/social-network-api' element={<SocialNetworkAPI />} />
+            <Route path='/to-do-app' element={<ToDoApp />} />
+            <Route path='/personal-portfolio' element={<PersonalPortfolio />} />
+            <Route path='/weather-dashboard' element={<WeatherDashboard />} />
+            <Route path='*' element={<AboutMe />} />
+          </Routes>
 
-      <div className='text-center footer'>
-        <footer>
-          <a href="https://www.github.com/AHelmin"><img src={GitHubIcon} className='icon' id='git-icon' alt='github icon' /></a>
-          <a href='https://www.linkedin.com/in/andrew-helmin-984074137'><img src={LinkedInIcon} className="ms-3 icon" id='linked-icon' alt='linkedin icon' /></a>
-          <a href='https://www.facebook.com/andrew.helmin/'><img src={FacebookIcon} className="ms-3 icon" id='facebook-icon' alt='facebook icon' /></a>
-        </footer>
-      </div>
+        </div >
+
+        <div className='footer-container'>
+          <footer className='footer'>
+            <ul className='footer-icons'>
+              <li><a href="https://www.github.com/AHelmin"><img src={GitHubIcon} className='icon' id='git-icon' alt='github icon' /></a></li>
+              <li><a href='https://www.linkedin.com/in/andrew-helmin-984074137'><img src={LinkedInIcon} className="ms-5 icon" id='linked-icon' alt='linkedin icon' /></a></li>
+              <li><a href='https://www.facebook.com/andrew.helmin/'><img src={FacebookIcon} className="ms-5 icon" id='facebook-icon' alt='facebook icon' /></a></li>
+            </ul>
+          </footer>
+        </div>
       </BrowserRouter>
     </>
   )
