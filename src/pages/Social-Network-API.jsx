@@ -15,6 +15,7 @@ export default function SocialNetworkAPI() {
         </ul>
         <h4 className="text-left mb-3">Back-End Tech Stack</h4>
         <ul>
+          <li>Node.js</li>
           <li>Express</li>
           <li>Mongoose</li>
           <li>MongoDB</li>
@@ -25,3 +26,4 @@ export default function SocialNetworkAPI() {
         </>
       )
     }
+ 
